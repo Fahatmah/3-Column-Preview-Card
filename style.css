@@ -1,0 +1,172 @@
+:root {
+        --Bright-orange: hsl(31, 77%, 52%);
+        --Dark-cyan: hsl(184, 100%, 22%);
+        --Very-dark-cyan: hsl(179, 100%, 13%);
+        --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75); 
+        --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+}
+
+.column {
+        padding: 4rem 3rem;
+}
+
+.header {
+        margin: 2.5rem 0;
+        font-size: 2.4rem;
+        color: var(--Very-light-gray-background-headings-buttons);
+        text-transform: uppercase;
+        font-family: 'Big Shoulders Display', cursive;
+}
+
+.prgrph {
+        margin-bottom: 5rem;
+        line-height: 2;
+        color: var(--Transparent-white-paragraphs);
+        font-size: 1rem;
+        font-family: 'Lexend Deca', sans-serif;
+}
+
+.learn_more_link {
+        position: relative;
+        width: 9rem;
+        height: 3rem;
+        border-radius: 40px;
+        background-color: var(--Very-light-gray-background-headings-buttons);
+        transition: 0.5s;
+}
+
+.learn_more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 0.990rem;
+        font-family: 'Lexend Deca', sans-serif;
+}
+
+.learn_more_link:hover a {
+        color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.learn_more_link:hover {
+        border: 2px solid var(--Very-light-gray-background-headings-buttons);
+        background-color: transparent;
+}
+
+.learn_more_link:active {
+        background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+body {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.columnContainer {
+        display: flex;
+        width: 65rem;
+        border-radius: 8px;
+        overflow: hidden;
+}
+
+.column.One {
+        background-color: var(--Bright-orange);
+}
+
+.column.Two {
+        background-color: var(--Dark-cyan);
+}
+
+.column.Three {
+        background-color: var(--Very-dark-cyan);
+}
+
+.One .learn_more {
+        color: var(--Bright-orange);
+}
+
+.One .learn_more:active {
+        color: var(--Bright-orange);
+}
+
+.Two .learn_more {
+        color: var(--Dark-cyan);
+}
+
+.Two .learn_more:active {
+        color: var(--Dark-cyan);
+}
+
+.Three .learn_more {
+        color: var(--Very-dark-cyan);
+}
+
+.Three .learn_more:active {
+        color: var(--Very-dark-cyan);
+}
+
+.attribution { 
+        position: fixed;
+        bottom: 5px;
+        font-size: 11px; 
+        text-align: center; 
+}
+
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1050px) {
+        html {
+                font-size: 90%;
+        }
+}
+
+@media (max-width: 950px) {
+        html {
+                font-size: 80%;
+        }
+}
+
+@media (max-width: 850px) {
+        html {
+                font-size: 70%;
+        }
+}
+
+@media (max-width: 750px) {
+        html {
+                font-size: 65%;
+        }
+}
+
+@media (max-width: 670px) {
+        html {
+                font-size: 70%;
+        }
+
+        body {
+                padding: 5rem 0;
+        }
+
+        .columnContainer {
+                width: 80%;
+                flex-direction: column;
+        }
+}
+
+@media (max-width: 375px) {
+        .columnContainer {
+                width: 80%;
+        }
+}
